@@ -1,3 +1,4 @@
+// Function to toggle the display of a table when respective button is clicked
 function displayTable(table) {
     if (table.style.display == "none") {
       table.style.display = "table";
@@ -6,6 +7,7 @@ function displayTable(table) {
     }
 }
 
+// Storing the default website styles
 const defaultStyles = {
     textColor: window.getComputedStyle(document.body).getPropertyValue('color'),
     buttonBackgroundColor: window.getComputedStyle(document.querySelector("button")).getPropertyValue('background-color'),
@@ -55,6 +57,7 @@ function getRandomColor() {
     return color;
 }
 
+// Add event listeners after the whole DOM content has loaded
 document.addEventListener("DOMContentLoaded", function () {
     const sundayButton = document.getElementById("sundayButton");
     const sundayTable = document.getElementById("sundayTable");
@@ -114,16 +117,3 @@ document.addEventListener("DOMContentLoaded", function () {
     const resetBtn = document.getElementById("reset");
     resetBtn.addEventListener("click", resetX);
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
