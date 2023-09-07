@@ -8,7 +8,7 @@ h1 {
 }
 
 button {
-    display: flex;
+    display: flex-inline;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -19,7 +19,9 @@ button {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    background-color: #ffcc00; /* Lemon */
+    width: 100%;
+    border-radius: 8px;
+    background-color: #6f00ff84;
 }
 
 button:hover {
@@ -30,7 +32,7 @@ button:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     cursor: pointer;
 }
 
@@ -59,12 +61,13 @@ table {
 	text-align: left;
 	position: relative;
 	border-collapse: collapse; 
-	background-color: #f6f6f6;
+	background-color: #f6f6f66b;
 	font-size: 12px;
+    width: 100%;
 }
 
 td, th {
-	border: 1px solid #999;
+	border: 1px solid rgba(153, 153, 153, 0.332);
 	padding: 10px;
 }
 
@@ -73,7 +76,7 @@ td {
 }
 
 th {
-	background: brown;
+	background: rgb(142, 165, 42);
 	color: white;
 	border-radius: 0;
 	position: sticky;
