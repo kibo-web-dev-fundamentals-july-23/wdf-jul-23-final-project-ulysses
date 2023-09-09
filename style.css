@@ -32,29 +32,45 @@ button:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     cursor: pointer;
 }
 
-.image-wrapper {
-    /* position: relative; */
-    width: 150px; /* Initial size */
+/* .image-wrapper {
+    position: relative;
+    width: 150px;  Initial size 
     transition: transform 0.3s ease;
+} */
+
+.colorize-image {
+    width: 150px; /* Initial size */
+    margin: 10px; /* Adjust the spacing between images as needed */
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    position: relative; /* Add relative positioning */
+    z-index: 1; /* Set a higher z-index to ensure images appear on top */
 }
 
-.image {
-    width: 100%; /* Adjust the size as needed */
+.colorize-image:hover {
+    filter: grayscale(0%);
+    transform: scale(1.2); /* Increase the scale on hover */
+    z-index: 2; /* Set a higher z-index on hover to bring the image to the front */
+}
+
+/* .image {
+    width: 100%; 
     filter: grayscale(100%);
     transition: filter 0.3s ease;
 }
 
 .image-wrapper:hover {
-    transform: scale(1.5); /* Increase the scale on hover */
+    transform: scale(1.5); 
+    z-index: ;
 }
 
 .image:hover {
     filter: grayscale(0%);
-}
+} */
 
 table {
     display: none;
