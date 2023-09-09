@@ -34,7 +34,7 @@ button:hover {
     align-items: center;
     /* height: 100vh; */
     cursor: pointer;
-    overflow-x: auto;
+    overflow-x: scroll;
 }
 
 /* .image-wrapper {
